@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1 style="background-color:lightgreen; text-align-last:center"> Now you are ready to fill the form !  </h1> <br>
+
+<form action="userlogin" method="POST">
+    {% csrf_token %}
+    
+    
+    Full Name  : <input type="text" name="full_name" placeholder="Fulllname"> <br> <br>
+    Address    : <input type="text" name="address" placeholder="Address">  <br> <br>
+    10th Marks : <input type="number" name="10th_marks" placeholder="10th Marks"> <br> <br>
+    12th Marks : <input type="number" name="12th_marks" placeholder="12th Marks"> <br> <br>
+    Skills     : <input type="text" name="skills" placeholder="Skills">  <br> <br>
+    Contact no.: <input type="tel" name="contact_no." placeholder="Phone"> <br> <br>
+
+
+    <button type="submit"> REGISTER </button>
+    
+
+</form>
+
+
+
+
+
+{% endblock %}
